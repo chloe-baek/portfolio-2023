@@ -1,0 +1,18 @@
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/base';
+@import 'base/animations';
+
+// @import 'components/about';
+// @import 'components/button';
+// @import 'components/contact';
+// @import 'components/modal';
+// @import 'components/top';
+
+@import 'layout/about';
+@import 'layout/contact';
+@import 'layout/header';
+@import 'layout/work';
+
+@import 'pages/home';

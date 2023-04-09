@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Chloe Baek</title>
+    <script src="https://kit.fontawesome.com/03376f39f2.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script src="anime.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__linkContainer">
+                <a href="#" class="header__link"><img src="images/logo.png" alt="Chloe's logo" class="header__logo"></a>
+                <p class="header__arrow">why is g1?</p>
+            </div>
+            <ul class="header__ul">
+                <!-- <a href="#about" class="header__li-a">
+                    <li class="header__li">Home</li>
+                </a> -->
+                <a href="#about" class="header__li-a">
+                    <li class="header__li">About</li>
+                </a>
+                <a href="#work" class="header__li-a">
+                    <li class="header__li">Work</li>
+                </a>
+                <a href="#contact" class="header__li-a">
+                    <li class="header__li">Contact</li>
+                </a>
+
+            </ul>
+
+        </nav>
+        <div class="header__section">
+            <div class="css-transforms-demo el">what </div>
+            <p class="header__para">Lorem ipsum dolor sit</p>
+            <h1 class="header__heading">I am Chloe</h1>
+
+            <p class="header__para">I am Chloe Baek</p>
+            <p class="header__para">Lorem ipsum dolor sit</p>
+        </div>
+    </header>
+    <main>
+        <section class="about" id="about">
+            <h2>About</h2>
+            <div class="about__container">
+                <img src="./images/profile.jpg" alt="chloe's profile image" class="about__img rellax"
+                    data-rellax-speed="2">
+                <p class="about__para rellax" data-rellax-speed="4">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Natus, dolore. Debitis,
+                    nostrum quo ex
+                    blanditiis quis perspiciatis cupiditate aperiam odit ipsam error architecto modi temporibus.
+                    Voluptatibus beatae eum expedita facere?</p>
+            </div>
+        </section>
+        <section class="work" id="work">
+            <h2>Work</h2>
+            <div class="work__container" data-scroll>
+                <a href="#" class="work__link">
+                    <div class="work__imgContainer">
+                        <img src="./images/works/korean-1 copy.jpg" alt="" class="work__img">
+                    </div>
+                    <div class="work__desc">
+                        <h3 class="work__heading">Travel to Korea</h3>
+                        <p class="work__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel
+                            saepe tempora earum fuga eligendi nostrum dignissimos ut molestiae voluptates rem dolore
+                            sunt at maxime sit necessitatibus, recusandae laboriosam aperiam!</p>
+                    </div>
+                </a>
+            </div>
+            <div class="work__container" data-scroll>
+                <a href="#" class="work__link">
+                    <div class="work__desc-left">
+                        <h3 class="work__heading">Travel to Korea</h3>
+                        <p class="work__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti vel
+                            saepe tempora earum fuga eligendi nostrum dignissimos ut molestiae voluptates rem dolore
+                            sunt at maxime sit necessitatibus, recusandae laboriosam aperiam!</p>
+                    </div>
+                    <div class="work__imgContainer-right">
+                        <img src="./images/works/korean-1 copy.jpg" alt="" class="work__img">
+                    </div>
+
+                </a>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <div class="contact__container">
+                <a href="baekjewon@gmail.com" target="_blank" class="contact__link">baekjewon@gmail.com</a>
+                <a href="#" class="contact__link"><i class='fab fa-github'></i>github</a>
+                <a href="#" class="contact__link"><i class='fab fa-linkedin'></i>linkedin</a>
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__para">&copy; 2022-
+            <script>
+                document.write(new Date().getFullYear())
+            </script> by Chloe Jewon Baek. All rights reserved.
+        </p>
+    </footer>
+    <script src="./script/scroll.js"></script>
+    <script src="./script/rellax.js"></script>
+    <script>
+        anime({
+            targets: '.css-transforms-demo .el',
+            translateX: 250,
+            scale: 2,
+            rotate: '1turn'
+        });
+
+    </script>
+</body>
+
+</html>

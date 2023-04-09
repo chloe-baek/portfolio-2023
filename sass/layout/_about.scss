@@ -1,0 +1,20 @@
+.about {
+  height: 100vh;
+  position: relative;
+  &__container {
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    @include absCenter;
+  }
+  &__img {
+    width: 400px;
+    height: 400px;
+    border-radius: 14% 86% 14% 86% / 85% 8% 92% 15%;
+  }
+  &__para {
+    text-align: right;
+    padding-left: 3rem;
+    font-size: $font-size-df;
+  }
+}

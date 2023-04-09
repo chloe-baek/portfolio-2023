@@ -1,0 +1,19 @@
+.contact {
+  height: 97vh;
+  position: relative;
+  &__container {
+    @include absCenter;
+    display: flex;
+    flex-direction: column;
+    font-size: $font-size-lg;
+    text-align: center;
+  }
+  &__link {
+    padding-bottom: 3rem;
+    text-decoration: underline;
+  }
+}
+.fab {
+  padding-right: 1rem;
+  font-size: $font-size-xl;
+}
