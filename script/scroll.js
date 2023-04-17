@@ -4,7 +4,16 @@ ScrollOut({
       startDelay: 500,
       cursor: false,
     })
-      .pause(2000)
+      .pause(3000)
       .go();
   },
+});
+
+const toTop = document.querySelector('.work__top');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 100) {
+    toTop.classList.add('active');
+  } else {
+    toTop.classList.remove('active');
+  }
 });
