@@ -2,6 +2,8 @@
 /node_modules
 /.pnp
 .pnp.js
+/works
+.mp4
 
 
 # testing
