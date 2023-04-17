@@ -147,6 +147,8 @@ a {
     text-align: center; }
   .contact__link {
     padding-bottom: 1.7rem; }
+    .contact__link:hover {
+      transform: scale(1.1) rotate(-3deg); }
 
 .fab,
 .fa-solid {
@@ -324,6 +326,6 @@ strong {
 .footer {
   height: 3vh; }
   .footer__para {
-    font-size: 1vw;
+    font-size: clamp(1.2rem, 0.8vw, 1.5rem);
     text-align: right;
     padding-right: 3rem; }

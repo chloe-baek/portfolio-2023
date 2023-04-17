@@ -1,9 +1,11 @@
+/images/works
+*.mp4
+/includes/database.php
+
 # dependencies
 /node_modules
 /.pnp
 .pnp.js
-/images/works
-*.mp4
 
 # testing
 /coverage

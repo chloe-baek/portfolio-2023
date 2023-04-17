@@ -10,7 +10,9 @@
   }
   &__link {
     padding-bottom: 1.7rem;
-    // text-decoration: underline;
+    &:hover {
+      transform: scale(1.1) rotate(-3deg);
+    }
   }
 }
 .fab,
