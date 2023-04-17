@@ -8,9 +8,4 @@
  if(!$connection){
      die(mysqli_connect_error());
  }
-// if($connection){
-//     print "success";
-// }else{
-//     print "fail";
-// }
 ?>
