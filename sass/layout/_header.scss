@@ -45,11 +45,11 @@
   align-items: center;
   height: 87vh;
   &__heading {
-    font-size: 10vw;
+    font-size: 9vw;
   }
 
   &__para {
-    font-size: $font-size-xl;
+    font-size: $font-size-df;
     line-height: 1.7;
     span {
       font-family: 'mina', serif;
@@ -58,8 +58,6 @@
       font-size: 3rem;
     }
   }
-}
-.sticky {
 }
 
 .block {
@@ -70,37 +68,20 @@
   height: 100vh;
 }
 .loading {
-  &__text {
-    font-family: calluna, serif;
-    font-size: 3rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5em;
-    color: yellowgreen;
-    overflow: hidden;
-
-    &--wrapper {
-      position: absolute;
-      top: 0;
-      left: 0;
-      background: yellow;
-    }
-  }
-
   &__reveal {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    background: yellowgreen;
+    background: $color-1-bg;
   }
 
   &__pre {
     position: absolute;
     top: 0;
     left: 0;
-    background: yellowgreen;
+    background: $color-1-font;
   }
   &__page {
     position: absolute;
@@ -109,8 +90,7 @@
     height: 100%;
     background: linear-gradient(
       10deg,
-      rgba(blue, 0.7) 0%,
-      rgba(blue, 0.7) 100%
+      rgba($color-2-bg, 0.7) 100% rgba($color-2-bg, 0.7) 0%
     );
 
     &--wrapper {

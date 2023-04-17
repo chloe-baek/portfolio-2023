@@ -9,11 +9,12 @@
     text-align: center;
   }
   &__link {
-    padding-bottom: 3rem;
-    text-decoration: underline;
+    padding-bottom: 1.7rem;
+    // text-decoration: underline;
   }
 }
-.fab {
-  padding-right: 1rem;
+.fab,
+.fa-solid {
+  padding: 0 1rem 0 0;
   font-size: $font-size-xl;
 }
