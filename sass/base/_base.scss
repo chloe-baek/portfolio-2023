@@ -41,7 +41,12 @@ h3 {
   font-size: 2vw;
   padding-bottom: 2rem;
 }
-
+h4 {
+  text-align: right;
+  font-size: $font-size-df;
+  font-weight: 500;
+  text-decoration: underline;
+}
 section {
   padding: 0 3rem;
 }

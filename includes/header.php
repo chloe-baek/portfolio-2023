@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="apple-touch-icon" href="/images/favicon.ico" />
     <title>Chloe Baek</title>
     <script src="https://kit.fontawesome.com/03376f39f2.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
@@ -18,17 +20,17 @@
 <body>
     <header class="header">
         <nav class="header__nav">
-            <a href="./index.php" class="header__link">
+            <a href="index" class="header__link">
                 <img src="images/logo.png" alt="Chloe's logo" class="header__logo">
             </a>
             <ul class="header__ul">
-                <a href="./about.php" class="header__li-a">
+                <a href="about" class="header__li-a">
                     <li class="header__li">About</li>
                 </a>
-                <a href="./work.php" class="header__li-a">
+                <a href="work" class="header__li-a">
                     <li class="header__li">Work</li>
                 </a>
-                <a href="./contact.php" class="header__li-a">
+                <a href="contact" class="header__li-a">
                     <li class="header__li">Contact</li>
                 </a>
 

@@ -11,18 +11,9 @@
 
 </section>
 
-<!-- <div class="loading">
-    <div class="loading__reveal"></div>
-    <div class="loading__pre block">
-        <div class="loading__page--wrapper">
-            <div class="loading__page"></div>
-        </div>
-    </div>
-</div> -->
-
 <?php include('includes/footer.php') ?>
 
-<script src="./script/home.js"></script>
+<script src="script/home.js"></script>
 
 </script>
 

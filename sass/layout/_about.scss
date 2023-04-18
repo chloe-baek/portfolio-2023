@@ -37,11 +37,15 @@
 
     &-first {
       font-family: 'Cormorant', serif;
-      font-size: clamp(2rem, $font-size-lg, 3.2rem);
+      font-size: clamp(2rem, $font-size-lg, 3rem);
       font-weight: 600;
       text-align: right;
       padding-left: 3rem;
       line-height: 1.6;
+    }
+
+    &-firstIntro {
+      font-size: clamp(2.5rem, $font-size-xl, 4rem);
     }
     // font-size: clamp(min, vw, max)
   }

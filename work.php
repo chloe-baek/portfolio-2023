@@ -2,7 +2,8 @@
 <?php include('includes/header.php') ?>
 <section class="work">
     <h2 class="heading__h2">Work</h2>
-    <ul class="work__ul">
+    <h4 class="heading__h4">&ast;Hover over the image with your mouse, a video will play.</h4>
+    <ul class=" work__ul">
 
         <?php
      $id = $_GET['id'];
@@ -15,8 +16,8 @@
          if($row['id'] %2 === 0){
             print '<li class="work__container" data-scroll>
                     <div class="work__tab">
-                    <div class="work__imgContainer">
-                    <video muted autoplay loop class="work__img">
+                    <div class="work__imgContainer work__imgContainer-left">
+                    <video muted loop class="work__img">
                     <source src="images/works/'.$row['img'].'" type="video/mp4">
                     </video>
                     </div><div class="work__desc">
@@ -33,9 +34,9 @@
                 print '<p class="work__para"><strong>Collaborator | </strong>'.$row['collaborator'].'</p>
                        <p class="work__para"><strong>Role | </strong>'.$row['role'].'</p>';
             }
-            print '<p class="work__para"><strong>Completed | </strong>'.$row['completed'].'</p><div>';
+            print '<p class="work__para"><strong>Completed | </strong>'.$row['completed'].'</p><div class="work__link-right">';
             if(!empty($row['demo'])){
-                print '<a href='.$row['demo'].' class="work__link" target="_blank"><i class="fa fa-home"></i></a>';
+                print '<a href='.$row['demo'].' class="work__link " target="_blank"><i class="fa fa-home"></i></a>';
             }
             if(!empty($row['git'])){
                 print'<a href='.$row['git'].' class="work__link" target="_blank">
@@ -58,17 +59,17 @@
                 print '<p class="work__para"><strong>Collaborator | </strong>'.$row['collaborator'].'</p>
                         <p class="work__para"><strong>Role | </strong>'.$row['role'].'</p>';
             }
-            print '<p class="work__para"><strong>Completed | </strong>'.$row['completed'].'</p><div>';
+            print '<p class="work__para"><strong>Completed | </strong>'.$row['completed'].'</p><div class="work__link-left">';
             if(!empty($row['demo'])){
-                print '<a href='.$row['demo'].' class="work__link" target="_blank"><i class="fa fa-home"></i></a>';
+                print '<a href='.$row['demo'].' class="work__link " target="_blank"><i class="fa fa-home"></i></a>';
             }
             if(!empty($row['git'])){
                 print'<a href='.$row['git'].' class="work__link" target="_blank">
                 <i class="fa-brands fa-github"></i></a></div>';
             }
-            print  '</div><div class="work__imgContainer-right">
-                    <video muted autoplay loop class="work__img">
-                    <source src="images/works/'.$row['img'].'" type="video/mp4">
+            print  '</div><div class="work__imgContainer-right work__imgContainer">
+                    <video muted loop class="work__img">
+                        <source src="images/works/'.$row['img'].'" type="video/mp4">
                     </video>';
 
          }
@@ -84,7 +85,8 @@
     <i class="fas fa-chevron-circle-up"></i>
 </a>
 <?php include('includes/footer.php') ?>
-<script src="./script/scroll.js"></script>
+<script src="script/scroll.js"></script>
+<script src="script/video.js"></script>
 
 </body>
 

@@ -13,4 +13,5 @@ window.addEventListener('mousemove', (e) => {
 });
 document.addEventListener('DOMContentLoaded', () => {
   new TypeIt('.heading__h2').pause(1000).go();
+  new TypeIt('.heading__h4').pause(1000).go();
 });

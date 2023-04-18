@@ -15,7 +15,7 @@
 </main>
 
 <?php include('includes/footer.php') ?>
-<script src="./script/contact.js"></script>
+<script src="script/contact.js"></script>
 
 </body>
 

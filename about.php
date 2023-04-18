@@ -8,7 +8,7 @@
             alt="chloe's profile image" class="about__img">
 
         <div class="about_para">
-            <p class="about__p-first">Hello!</p>
+            <p class="about__p-first about__p-firstIntro">Hello!</p>
             <p class="about__p-first">My name is Chloe Jewon Baek and I aspire to become a frontend
                 developer.</p>
             <br>
@@ -37,7 +37,7 @@
 </section>
 
 <?php include('includes/footer.php') ?>
-<script src="./script/about.js"></script>
+<script src="script/about.js"></script>
 </body>
 
 </html>
