@@ -40,6 +40,9 @@ h3 {
   font-weight: 700;
   font-size: 2vw;
   padding-bottom: 2rem;
+  &:hover {
+    transform: rotate(-2deg);
+  }
 }
 h4 {
   text-align: right;

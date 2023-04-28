@@ -56,9 +56,14 @@
       text-align: right;
     }
   }
+
   &__para {
     font-size: clamp(1.4rem, $font-size-df, 2rem);
     line-height: 1.7;
+
+    &-des {
+      padding: 1.8rem 0;
+    }
   }
 
   &__top {

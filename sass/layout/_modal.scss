@@ -1,0 +1,102 @@
+.modal {
+  @include fixCenter;
+  min-width: 100rem;
+  max-width: 150rem;
+  padding: 3rem 4rem;
+  border: 1px solid inherit;
+  background-color: $color-1-bg;
+  color: $color-1-font;
+  border-radius: 5px;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.4s;
+
+  // @include respond(tab-land) {
+  //   min-width: 80rem;
+  // }
+  // @include respond(tab-port) {
+  //   min-width: 50rem;
+  // }
+
+  &__top {
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin: 0 auto;
+    overflow: hidden;
+    // @include respond(tab-port) {
+    //   width: 400px;
+    // }
+  }
+
+  &__btm {
+    font-weight: 400;
+
+    &-h5 {
+      font-size: 2.5rem;
+    }
+
+    &-para {
+      padding-top: 1rem;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+  }
+  &__container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-flow: row wrap;
+    // @include respond(tab-port) {
+    //   display: inline-block;
+    // }
+  }
+
+  &__list {
+    padding: 3px;
+    flex-basis: 50%;
+    list-style: none;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+// .modal__top .animated {
+//   transition: 0.5s ease-out;
+// }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.btn__close {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
