@@ -28,7 +28,10 @@
                     <li class="header__li">About</li>
                 </a>
                 <a href="work" class="header__li-a">
-                    <li class="header__li">Work</li>
+                    <li class="header__li">Development</li>
+                </a>
+                <a href="design" class="header__li-a">
+                    <li class="header__li">Design</li>
                 </a>
                 <a href="contact" class="header__li-a">
                     <li class="header__li">Contact</li>
@@ -36,7 +39,7 @@
 
             </ul>
 
+            <a href="#" class="header__toggle"><i class="fa-solid fa-bars"></i></a>
         </nav>
-
     </header>
-    <main>
+    <main class="main">

@@ -1,8 +1,8 @@
 <?php include('includes/database.php') ?>
 <?php include('includes/header.php') ?>
 <section class="work">
-    <h2 class="heading__h2">Work</h2>
-    <h4 class="heading__h4">&ast;Hover over the image with your mouse, a video will play</h4>
+    <h2 class="heading__h2">Development</h2>
+    <!-- <h4 class="heading__h4">&ast;Hover over the image with your mouse, a video will play</h4> -->
     <ul class="work__ul">
 
         <?php
@@ -16,50 +16,38 @@
             print '<li class="work__container" data-scroll>
                     <div class="work__tab">
                     <div class="work__imgContainer work__imgContainer-left">
-                    <video muted loop class="work__img">
-                    <source src="images/works/'.$row['img'].'" type="video/mp4">
-                    </video>
+                    <a href="#modal'.$row['id'].'" class="btn__show">
+                    <img src="images/img/'.$row['img_main'].'" class="work__img">
+                    </a>
                     </div>
                     <div class="work__desc">
-                    <a href="#modal'.$row['id'].'" class="btn__show">
+                    
                     <h3 class="work__heading">'.$row['project_name'].'</h3>
-                    </a>
+                    
                     <p class="work__para"><strong>Project Type | </strong>'.$row['project_type'].'</p>
                     <p class="work__para work__para-des">'.$row['des'].'</p>
                     <p class="work__para"><strong>Technology Used | </strong>'.$row['technology_used'].'</p>
                     <p class="work__para"><strong>Completed | </strong>'.$row['completed'].'</p>
                     <div class="work__link-right">';
             if(!empty($row['demo'])){
-                print '<a href='.$row['demo'].' class="work__link " target="_blank"><i class="fa fa-home"></i></a>';
+                print '<a href='.$row['demo'].' class="work__link" target="_blank"><i class="fa fa-home"></i></a>';
             }
             if(!empty($row['git'])){
                 print'<a href='.$row['git'].' class="work__link" target="_blank">
                 <i class="fa-brands fa-github"></i></a></div>
-                </div>
-        </div>
-        </li>';
+                </div>';
             }
-            print '<div class="modal hidden" id="modal'.$row['id'].'">
-            <button class="btn__close">&times;</button>
-            <p class="work__para"><strong>Goals | </strong>'.$row['goals'].'</p>
-            <p class="work__para"><strong>Challenging | </strong>'.$row['challenging'].'</p>';
-            if(!empty($row['target_audience'])){
-                print '<p class="work__para"><strong>Target Audience | </strong>'.$row['target_audience'].'</p>';
-            }
-            if(!empty($row['collaborator'] || $row['role']) ){
-                print '<p class="work__para"><strong>Collaborator | </strong>'.$row['collaborator'].'</p>
-                       <p class="work__para"><strong>Role | </strong>'.$row['role'].'</p>';
-            }
-            print '</div>';
-         
+            
+        print '</div></li>';
+            
          }
          if($row['id'] % 2 === 1){
             print '<li class="work__container" data-scroll>
                     <div class="work__tab">
                     <div class="work__desc-left">
-                    <a href="#modal'.$row['id'].'" class="btn__show">
+                    
                     <h3 class="work__heading">'.$row['project_name'].'</h3>
-                    </a>
+                   
                     <p class="work__para"><strong>Project Type | </strong>'.$row['project_type'].'</p>
                     <p class="work__para work__para-des">'.$row['des'].'</p>
                     <p class="work__para"><strong>Technology Used | </strong>'.$row['technology_used'].'</p>
@@ -67,24 +55,25 @@
                     <div class="work__link-left">';
 
             if(!empty($row['demo'])){
-                print '<a href='.$row['demo'].' class="work__link " target="_blank"><i class="fa fa-home"></i></a>';
+                print '<a href='.$row['demo'].' class="work__link" target="_blank"><i class="fa fa-home"></i></a>';
             }
             if(!empty($row['git'])){
                 print'<a href='.$row['git'].' class="work__link" target="_blank">
-                <i class="fa-brands fa-github"></i></a>
+                <i class="fa-brands fa-github"></i></a></div>
                 </div>';
             }
-            print  '</div>
-                    <div class="work__imgContainer-right work__imgContainer">
-                    <video muted loop class="work__img">
-                        <source src="images/works/'.$row['img'].'" type="video/mp4">
-                    </video>
+            print  '<div class="work__imgContainer-right work__imgContainer">
+            <a href="#modal'.$row['id'].'" class="btn__show">
+                    <img src="images/img/'.$row['img_main'].'" class="work__img"> </a>
                     </div>
-                </div>
-                </li>';
+                </div></li>';
+            }
             
             print '<div class="modal hidden" id="modal'.$row['id'].'">
                     <button class="btn__close">&times;</button>
+                    <video muted controls class="work__video">
+                    <source src="images/works/'.$row['img'].'" type="video/mp4">
+                    </video>
                     <p class="work__para"><strong>Goals | </strong>'.$row['goals'].'</p>
                     <p class="work__para"><strong>Challenging | </strong>'.$row['challenging'].'</p>';
                     if(!empty($row['target_audience'])){
@@ -96,17 +85,10 @@
                     }
             print '</div>';
 
-         }
-           
         }
-        // print '<div class="modal hidden" id="modal'.$row['id'].'">
-        // <button class="btn__close">&times;</button>
-        // <p>para</p>
-        // </div>';
+       
         ?>
-        <!-- </div>
-        </div>
-        </li> -->
+
 
     </ul>
 </section>
@@ -115,7 +97,7 @@
 </a>
 <?php include('includes/footer.php') ?>
 <script src="script/scroll.js"></script>
-<script src="script/video.js"></script>
+<!-- <script src="script/video.js"></script> -->
 <script src="script/modal.js"></script>
 </body>
 

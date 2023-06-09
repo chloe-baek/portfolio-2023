@@ -4,6 +4,10 @@
     height: 10vh;
     justify-content: space-between;
     align-items: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
   &__link {
     :hover {
@@ -17,24 +21,67 @@
     left: 2.5rem;
     top: 2.5rem;
     z-index: 1;
+
+    @include respond(tab-land) {
+      width: 8rem;
+    }
+    @include respond(tab-port) {
+      width: 6rem;
+    }
   }
   &__ul {
     display: flex;
+
+    @include respond(phone) {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 6rem;
+      width: 100%;
+    }
   }
 
   &__li {
     list-style: none;
-    font-size: 1.8rem;
+    font-size: clamp(1rem, 1.8rem, 2rem);
     margin-right: 3rem;
+    @include respond(phone) {
+      padding: 8px;
+      margin-right: 0;
+    }
     &-a {
       ::after {
         content: '|';
         padding-left: 5px;
+
+        @include respond(phone) {
+          content: '';
+          padding-left: 0;
+        }
       }
-      :hover {
-        transform: scale(1.1) rotate(-10deg);
+      &:hover {
+        transform: scale(1.1) rotate(-7deg);
       }
     }
+  }
+
+  &__toggle {
+    display: none;
+    position: absolute;
+    right: 0.75rem;
+    top: 1.75rem;
+    @include respond(phone) {
+      display: block;
+    }
+  }
+  &__toggle > i {
+    font-size: 1.8rem;
+  }
+}
+.header__ul.show {
+  @include respond(phone) {
+    display: flex;
+    z-index: 2;
   }
 }
 
@@ -45,11 +92,11 @@
   align-items: center;
   height: 87vh;
   &__heading {
-    font-size: 9vw;
+    font-size: clamp(5.5rem, 9vw, 13rem);
   }
 
   &__para {
-    font-size: $font-size-df;
+    font-size: clamp(1.2rem, $font-size-df, 3rem);
     line-height: 1.7;
     span {
       font-family: 'mina', serif;

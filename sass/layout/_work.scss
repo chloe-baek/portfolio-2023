@@ -11,35 +11,69 @@
     padding: 2rem;
     margin: 15rem auto;
     list-style: none;
+    // @include respond(tab-port) {
+    //   margin: 5rem auto;
+    // }
   }
 
   &__tab {
     display: flex;
+    @include respond(tab-port) {
+      display: block;
+    }
   }
 
   &__imgContainer {
-    display: flex;
+    // display: flex;
     width: 50%;
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
     transition: all 0.3s ease-in-out;
-    cursor: progress;
+    // cursor: progress;
+
+    @include respond(tab-port) {
+      // margin: 0 auto;
+      width: 100%;
+      padding: 1rem 0;
+    }
 
     &-left {
       border-right: 1px solid;
       padding-right: 2rem;
       border-top-right-radius: 3rem;
+      @include respond(tab-port) {
+        border: none;
+        padding-left: 0;
+      }
     }
 
     &-right {
       border-left: 1px solid;
       padding-left: 2rem;
       border-top-left-radius: 3rem;
+      @include respond(tab-port) {
+        border: none;
+        padding-left: 0;
+      }
     }
   }
   &__img {
     width: 100%;
     height: auto;
+    max-width: 750px;
     border-radius: 5px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+    &:hover {
+      filter: drop-shadow(0 0 0.75rem black);
+    }
+    @include respond(tab-port) {
+      position: static;
+      transform: translate(0, 0);
+    }
   }
   &__desc,
   &__desc-left {
@@ -47,6 +81,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @include respond(tab-port) {
+      width: 100%;
+      padding-bottom: 1.5rem;
+    }
   }
 
   &__desc {
@@ -54,6 +93,9 @@
     &-left {
       padding-right: 2rem;
       text-align: right;
+      @include respond(tab-port) {
+        text-align: left;
+      }
     }
   }
 
@@ -94,21 +136,17 @@
     }
   }
 
-  // &.active {
-  //   width: 50%;
-  //   border-radius: 1rem;
-  //   &::before {
-  //     top: -100%;
-  //   }
-  //   &::after {
-  //     bottom: -100%;
-  //   }
-  //   .work__imgContainer-right {
-  //     bottom: -100%;
-  //   }
-  // }
+  &__video {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    border-radius: 30px;
+  }
 }
-
+.heading__h4 {
+  font-size: clamp(1.7rem, $font-size-lg, 3rem);
+  padding-bottom: 2rem;
+}
 .active {
   bottom: 32px;
   pointer-events: auto;

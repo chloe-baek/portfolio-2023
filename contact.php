@@ -6,8 +6,8 @@
             chloe@jewon-baek.com</a>
         <a href="#" class="contact__link"><i class='fab fa-github'></i>github</a>
         <a href="#" class="contact__link"><i class='fab fa-linkedin'></i>linkedin</a>
-        <a href="./Chloe_Jewon_Baek.pdf" class="contact__link" download><i class="fa-solid fa-download"></i>Check
-            Resume</a>
+        <!-- <a href="./Chloe_Jewon_Baek.pdf" class="contact__link" download><i class="fa-solid fa-download"></i>Check
+            Resume</a> -->
 
     </div>
 

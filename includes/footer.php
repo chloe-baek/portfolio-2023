@@ -8,4 +8,11 @@
 </footer>
 
 <div class="circle"></div>
-<script src="./script/bgcolor.js"></script>
+<script src="./script/bgcolor.js" defer></script>
+<script>
+document.querySelector('.header__toggle').addEventListener('click', () => {
+    document.querySelector('.header__ul').classList.toggle('show');
+    document.querySelector('.main').classList.toggle('filter');
+
+});
+</script>

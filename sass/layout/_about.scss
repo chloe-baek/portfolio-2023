@@ -6,6 +6,13 @@
     justify-content: center;
     width: 70vw;
     @include absCenter;
+
+    @include respond(tab-port) {
+      display: block;
+      // overflow-y: auto;
+      width: 90vw;
+      transform: translate(0, 0);
+    }
   }
 
   &__img {
@@ -18,10 +25,14 @@
     box-shadow: -7px 8px 22px -2px rgba(0, 0, 0, 0.64);
     -webkit-box-shadow: -7px 8px 22px -2px rgba(0, 0, 0, 0.64);
     -moz-box-shadow: -7px 8px 22px -2px rgba(0, 0, 0, 0.64);
-    // position: absolute;
-    // z-index: 1;
-    // transition: all 0.2s;
-    // outline-offset: 2rem;
+    @include respond(tab-port) {
+      width: 40%;
+      height: 40%;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+
     &-avartar {
       position: fixed;
       left: 77%;
@@ -29,6 +40,10 @@
       width: clamp(160px, 15vw, 260px);
       height: clamp(160px, 15vw, 260px);
       z-index: -99;
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
   }
   &__p {
@@ -36,6 +51,9 @@
     padding-left: 3rem;
     line-height: 1.6;
     font-size: clamp(1.4rem, $font-size-df, 2rem);
+    @include respond(tab-port) {
+      padding-left: 0;
+    }
 
     &-first {
       font-family: 'Cormorant', serif;

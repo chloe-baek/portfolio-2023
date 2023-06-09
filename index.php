@@ -7,7 +7,7 @@
 
     <p class="home__para">Enjoys challenges, has strong adaptability, and prioritizes consideration and
         kindness.</p>
-    <p class="home__para">ISFJ - Introverted, Sensing, Feeling, Judging</p>
+    <!-- <p class="home__para">ISFJ - Introverted, Sensing, Feeling, Judging</p> -->
 
 </section>
 
