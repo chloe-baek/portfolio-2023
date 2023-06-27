@@ -226,6 +226,10 @@ a {
   .design__heading:hover {
     transform: rotate(0); }
 
+.design__para-des {
+  border-bottom: 1px solid;
+  padding-bottom: 2px; }
+
 .header__nav {
   display: flex;
   height: 10vh;

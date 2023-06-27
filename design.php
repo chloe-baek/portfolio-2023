@@ -22,14 +22,22 @@
                             <div class="design__desc">
                             
                             <h3 class="design__heading">'.$row['project_name'].'</h3>
-                            
-                            <p class="work__para"><strong>Project Type | </strong>'.$row['project_type'].'</p>
+
                             <p class="work__para design__para-des">'.$row['des'].'</p>
-                            <p class="work__para"><strong>Technology Used | </strong>'.$row['technology_used'].'</p>
-                            <p class="work__para"><strong>Goal | </strong>'.$row['goals'].'</p>
-                            <p class="work__para"><strong>Challenging | </strong>'.$row['challenging'].'</p>
-                            <p class="work__para"><strong>Target Audience | </strong>'.$row['target_audience'].'</p>
+                            <p class="work__para"><strong>Project Type | </strong>'.$row['project_type'].'</p>
+                            <p class="work__para"><strong>Technology Used | </strong>'.$row['technology_used'].'</p>';
+                            if(!empty($row['goals'])){
+                                print ' <p class="work__para"><strong>Goal | </strong>'.$row['goals'].'</p>';
+                            }
+                            if(!empty($row['challenging'])){
+                               print '<p class="work__para"><strong>Challenging | </strong>'.$row['challenging'].'</p>';
+                            }
+                            if(!empty($row['target_audience'])){
+                                print '<p class="work__para"><strong>Target Audience | </strong>'.$row['target_audience'].'</p>';
+                            }
                             
+                           
+                            print '
                             </div>
                     </div>
                 </li>';
