@@ -7,21 +7,16 @@
             sizes="(max-width: 56.23em) 20vw, (max-width: 37.5em) 30vw, 250px" src="images/profile.jpg"
             alt="chloe's profile image" class="about__img">
 
-        <div class="about_para">
-            <p class="about__p-first about__p-firstIntro">Hello!</p>
-            <p class="about__p-first">My name is Chloe Jewon Baek and I aspire to become a frontend
-                developer.</p>
+        <div class="about__para">
+            <p class="about__p-first ">Hello!</p>
+            <p class="about__p-first">
+                &#128205; My Korean name is pronounced <span>G1 </span>(G, One) so the logo reflects that. </p>
             <br>
-            <p class="about__p">I
-                completed the New Media Production and Design program at SAIT where I learned HTML, CSS,
-                Javascript,
-                PHP, and WordPress. In addition, I have been studying Javascript and React through online
-                courses in
-                my spare time. During the 4 semesters of my program and in practicum, I worked on various
-                projects
-                and discovered my passion for web development.</p>
+            <p class="about__p">Korean based in Calgary, Canada, I am continuously expanding my knowledge and exploring
+                new frameworks and libraries to enhance my skills. In this constantly evolving field, I strive to
+                provide seamless and captivating user experiences.</p>
             <br>
-            <p class="about__p">I believe that a good developer creates designs and
+            <!-- <p class="about__p">I believe that a good developer creates designs and
                 functions that are easy for users to use and
                 always strives to think from the target user's perspective. I am eager to become a new developer
                 who
@@ -30,10 +25,10 @@
             <br>
             <p class="about__p"> I hope that you will believe in my potential for growth and lead me in
                 the
-                right direction.</p>
+                right direction.</p> -->
         </div>
     </div>
-    <img src="./images/avartar.png" alt="chloe's avartar profile image" class="about__img-avartar ">
+
 </section>
 
 <?php include('includes/footer.php') ?>

@@ -120,12 +120,10 @@ a {
     @media only screen and (max-width: 56.25em) {
       .about__container {
         display: block;
-        width: 90vw;
-        transform: translate(0, 0); } }
+        width: 90vw; } }
   .about__img {
     width: 100%;
     height: 100%;
-    min-height: 160px;
     max-width: 360px;
     max-height: 360px;
     border-radius: 50%;
@@ -140,15 +138,10 @@ a {
       .about__img {
         display: none; } }
     .about__img-avartar {
-      position: fixed;
-      left: 77%;
-      top: 72%;
-      width: clamp(160px, 15vw, 260px);
-      height: clamp(160px, 15vw, 260px);
-      z-index: -99; }
-      @media only screen and (max-width: 56.25em) {
-        .about__img-avartar {
-          display: none; } }
+      width: 20%; }
+  @media only screen and (max-width: 37.5em) {
+    .about__para {
+      transform: none; } }
   .about__p {
     text-align: right;
     padding-left: 3rem;
@@ -162,10 +155,14 @@ a {
       font-size: clamp(2rem, 1.5vw, 3rem);
       font-weight: 600;
       text-align: right;
-      padding-left: 3rem;
       line-height: 1.6; }
-    .about__p-firstIntro {
-      font-size: clamp(2.5rem, 2vw, 4rem); }
+      .about__p-first:nth-child(1) {
+        font-size: clamp(2.5rem, 2vw, 4rem); }
+      .about__p-first span {
+        font-family: 'mina', serif;
+        font-weight: 900;
+        font-style: normal;
+        font-size: clamp(1.5rem, 2vw, 3.5rem); }
 
 .contact {
   height: 87vh;
@@ -178,10 +175,10 @@ a {
     -webkit-transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
-    font-size: 1.5vw;
     text-align: center; }
   .contact__link {
-    padding-bottom: 1.7rem; }
+    padding-bottom: 1.7rem;
+    font-size: clamp(1.3rem, 1.5vw, 2.5rem); }
     @media only screen and (max-width: 37.5em) {
       .contact__link {
         font-size: 1rem; } }
@@ -191,7 +188,7 @@ a {
 .fab,
 .fa-solid {
   padding: 0 1rem 0 0;
-  font-size: 2vw; }
+  font-size: clamp(1.3rem, 2vw, 2.5rem); }
 
 .design__ul {
   display: grid;
@@ -205,30 +202,28 @@ a {
 
 .design__container {
   padding: 2rem;
-  margin: 15rem auto;
+  margin: 3rem auto;
   list-style: none;
   transition: all 0.5 ease-in-out; }
-
-.design__figure {
-  width: 100%;
-  height: auto; }
 
 .design__img {
   width: 100%;
   height: auto; }
 
 .design__caption {
-  text-align: right; }
+  text-align: right;
+  font-size: 1vw; }
 
 .design__heading {
   font-weight: 700;
-  font-size: 1.6vw; }
+  font-size: clamp(1.5rem, 1.6vw, 2.5rem);
+  padding: 1rem 0; }
   .design__heading:hover {
     transform: rotate(0); }
 
 .design__para-des {
-  border-bottom: 1px solid;
-  padding-bottom: 2px; }
+  border-top: 1px solid;
+  padding: 2px 0; }
 
 .header__nav {
   display: flex;
@@ -307,16 +302,29 @@ a {
   justify-content: center;
   align-items: center;
   height: 87vh; }
+  .home__header {
+    display: flex;
+    justify-content: center;
+    align-items: end; }
   .home__heading {
-    font-size: clamp(5.5rem, 9vw, 13rem); }
+    font-size: clamp(4rem, 9vw, 13rem); }
   .home__para {
     font-size: clamp(1.2rem, 1.3vw, 3rem);
-    line-height: 1.7; }
+    line-height: 1.7;
+    padding: 1.3rem;
+    text-align: center;
+    width: 60%; }
+    .home__para:last-child {
+      font-size: clamp(1.3rem, 1.5vw, 3rem);
+      font-family: 'Cormorant', serif;
+      border-top: 1px solid; }
     .home__para span {
       font-family: 'mina', serif;
       font-weight: 900;
       font-style: normal;
-      font-size: 3rem; }
+      font-size: clamp(1.5rem, 2vw, 3.5rem); }
+  .home__para > strong {
+    font-size: 1.5vw; }
 
 .work {
   position: relative;
@@ -327,6 +335,7 @@ a {
   .work__container {
     width: 90vw;
     border: 1px solid;
+    border-radius: 10px;
     padding: 2rem;
     margin: 15rem auto;
     list-style: none; }
@@ -349,7 +358,7 @@ a {
       @media only screen and (max-width: 56.25em) {
         .work__imgContainer-left {
           border: none;
-          padding-left: 0; } }
+          padding-right: 0; } }
     .work__imgContainer-right {
       border-left: 1px solid;
       padding-left: 2rem;
@@ -368,8 +377,6 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%); }
-    .work__img:hover {
-      filter: drop-shadow(0 0 0.75rem black); }
     @media only screen and (max-width: 56.25em) {
       .work__img {
         position: static;
@@ -537,7 +544,7 @@ strong {
 .footer {
   height: 3vh; }
   .footer__para {
-    font-size: clamp(1.2rem, 0.8vw, 1.5rem);
+    font-size: clamp(1.2rem, 1vw, 1.5rem);
     text-align: right;
     padding-right: 3rem; }
   @media only screen and (max-width: 56.25em) {

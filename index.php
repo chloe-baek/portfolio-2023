@@ -1,13 +1,19 @@
 <?php include('includes/header.php') ?>
 
 <section class="home">
-    <p class="home__para">
-        The pronunciation of the logo <span>G1 </span>(G One) is the same as my Korean name.</p>
-    <h1 class="home__heading">I am Chloe,</h1>
 
-    <p class="home__para">Enjoys challenges, has strong adaptability, and prioritizes consideration and
-        kindness.</p>
-    <!-- <p class="home__para">ISFJ - Introverted, Sensing, Feeling, Judging</p> -->
+    <div class="home__header home__heading">
+        <h1 class="home__heading">I am Chloe,</h1>
+        <img src="./images/avartar.png" alt="chloe's avartar profile image" class="about__img-avartar ">
+    </div>
+
+    <p class="home__para">As a passionate and dedicated <strong>Frontend Developer</strong>, I am ready to embark on an
+        exciting journey
+        in the world of web development. Designing visually appealing and innovative websites is one of my greatest
+        passions. My website demonstrates my attention to detail, problem-solving skills, and commitment to continuous
+        learning. A new challenge is always exciting to me, and I am always open to collaboration. <strong>Thank you for
+            visiting my portfolio.</strong></p>
+
 
 </section>
 

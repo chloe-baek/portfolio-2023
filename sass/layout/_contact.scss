@@ -5,11 +5,12 @@
     @include absCenter;
     display: flex;
     flex-direction: column;
-    font-size: $font-size-lg;
+    // font-size: $font-size-lg;
     text-align: center;
   }
   &__link {
     padding-bottom: 1.7rem;
+    font-size: clamp(1.3rem, $font-size-lg, 2.5rem);
     @include respond(phone) {
       font-size: 1rem;
     }
@@ -21,5 +22,5 @@
 .fab,
 .fa-solid {
   padding: 0 1rem 0 0;
-  font-size: $font-size-xl;
+  font-size: clamp(1.3rem, $font-size-xl, 2.5rem);
 }
