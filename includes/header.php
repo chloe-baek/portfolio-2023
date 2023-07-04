@@ -39,7 +39,11 @@
 
             </ul>
 
-            <a href="#" class="header__toggle"><i class="fa-solid fa-bars"></i></a>
+            <!-- <a href="#" class="header__toggle"><i class="fa-solid fa-bars"></i></a> -->
+            <input type="checkbox" class="header__checkbox" id="header__btn">
+            <label for="header__btn" class="header__toggle">
+                <span class="header__icon">&nbsp;</span>
+            </label>
         </nav>
     </header>
     <main class="main">

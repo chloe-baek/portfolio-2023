@@ -2,6 +2,8 @@
   &__ul {
     display: grid;
     grid-template: auto 1fr / repeat(3, 1fr);
+    max-width: 90vw;
+    margin: 0 auto;
     @include respond(tab-port) {
       grid-template: auto 1fr / repeat(2, 1fr);
     }
@@ -13,7 +15,7 @@
     padding: 2rem;
     margin: 3rem auto;
     list-style: none;
-    transition: all 0.5 ease-in-out;
+    // transition: all 0.5 ease-in-out;
   }
 
   // &__figure {
