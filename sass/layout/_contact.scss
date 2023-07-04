@@ -10,10 +10,8 @@
   }
   &__link {
     padding-bottom: 1.7rem;
-    font-size: clamp(1.3rem, $font-size-lg, 2.5rem);
-    @include respond(phone) {
-      font-size: 1rem;
-    }
+    font-size: clamp(1.5rem, $font-size-lg, 2.5rem);
+
     &:hover {
       transform: scale(1.1) rotate(-3deg);
     }

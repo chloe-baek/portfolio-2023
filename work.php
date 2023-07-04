@@ -13,7 +13,7 @@
      while($row = mysqli_fetch_array($sql)){
         print '<li class="work__container" data-scroll>
                 <div class="work__tab">
-                <div class="work__imgContainer work__imgContainer-left">
+                <div class="work__imgContainer">
                 
                 <img src="images/img/'.$row['img_main'].'" class="work__img">
                 
@@ -35,12 +35,9 @@
                     ';
                 }
         print '</div></div></li>';
-
-
         }
-       
+    
         ?>
-
 
     </ul>
 </section>

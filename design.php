@@ -14,10 +14,8 @@
             print '<li class="design__container">
                     <div class="design__tab">
                 
-                     
-                                <img src="images/works/'.$row['img'].'" alt="'.$row['project_name'].'" class="design__img">
-                           
-
+                            <img src="images/works/'.$row['img'].'" alt="'.$row['project_name'].'" class="design__img">
+                        
                             <div class="design__desc">
                             
                             <h3 class="design__heading">'.$row['project_name'].'</h3>
@@ -50,14 +48,8 @@
     <i class="fas fa-chevron-circle-up"></i>
 </a>
 <?php include('includes/footer.php') ?>
-<script src="script/scroll.js" defer></script>
-<script>
-gsap.from('.design__container', {
-    duration: 3.5,
-    ease: 'power4.out',
-    y: 50,
-});
-</script>
+<script src="script/design.js" defer></script>
+
 </body>
 
 </html>

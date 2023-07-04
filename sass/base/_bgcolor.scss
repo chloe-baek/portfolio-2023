@@ -8,7 +8,10 @@
   color: $color-2-font;
 
   @if ($color-2-font == #eaa45d) {
-    .header__logo {
+    .header__logo,
+    .header__icon,
+    .header__icon ::before,
+    .header__icon ::after {
       filter: invert(1);
     }
   }
@@ -18,7 +21,10 @@
   color: $color-3-font;
 
   @if ($color-3-font == #a6d1c9) {
-    .header__logo {
+    .header__logo,
+    .header__icon,
+    .header__icon ::before,
+    .header__icon ::after {
       filter: invert(1);
     }
   }
@@ -32,7 +38,10 @@
   color: $color-5-font;
 
   @if ($color-5-font == #e4e898) {
-    .header__logo {
+    .header__logo,
+    .header__icon,
+    .header__icon ::before,
+    .header__icon ::after {
       filter: invert(1);
     }
   }
