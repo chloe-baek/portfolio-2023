@@ -46,8 +46,7 @@
 </a>
 <?php include('includes/footer.php') ?>
 <script src="script/scroll.js"></script>
-<!-- <script src="script/video.js"></script> -->
-<script src="script/modal.js"></script>
+
 </body>
 
 </html>

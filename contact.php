@@ -1,7 +1,7 @@
 <?php include('includes/header.php') ?>
 <section class="contact">
     <h2 class="heading__h2">Contact</h2>
-    <div class="contact__container">
+    <div class="contact__container container-gsap">
         <a href="mailto:chloe@jewon-baek.com" target="_blank" class="contact__link"><i class="fa-solid fa-envelope"></i>
             chloe@jewon-baek.com</a>
         <a href="https://github.com/chloe-baek" target="_blank" class="contact__link"><i
@@ -17,7 +17,7 @@
 </main>
 
 <?php include('includes/footer.php') ?>
-<script src="script/contact.js"></script>
+<script src="script/container.js"></script>
 
 </body>
 
