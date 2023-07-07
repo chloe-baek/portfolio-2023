@@ -1,7 +1,7 @@
 <?php include('includes/header.php') ?>
 <section class="about">
     <h2 class="heading__h2">About</h2>
-    <div class="about__container">
+    <div class="about__container container-gsap">
 
         <img srcset="images/profile-small.jpg 250w, images/profile.jpg 563w"
             sizes="(max-width: 56.23em) 20vw, (max-width: 37.5em) 30vw, 250px" src="images/profile.jpg"
@@ -32,7 +32,7 @@
 </section>
 
 <?php include('includes/footer.php') ?>
-<script src="script/about.js"></script>
+<script src="script/container.js"></script>
 </body>
 
 </html>
