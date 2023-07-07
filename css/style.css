@@ -145,15 +145,20 @@ a {
     @media only screen and (max-width: 56.25em) {
       .about__img {
         width: 40%;
-        height: 40%; } }
+        height: 40%;
+        margin-left: 5rem; } }
     @media only screen and (max-width: 37.5em) {
       .about__img {
         display: none; } }
     .about__img-avartar {
       width: 20%; }
-  @media only screen and (max-width: 37.5em) {
-    .about__para {
-      transform: none; } }
+  .about__para {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media only screen and (max-width: 37.5em) {
+      .about__para {
+        transform: none; } }
   .about__p {
     text-align: right;
     padding-left: 3rem;
@@ -369,7 +374,7 @@ a {
       font-family: 'Cormorant', serif;
       border-top: 1px solid; }
   .home__para > strong {
-    font-size: 1.5vw; }
+    font-size: clamp(1.3rem, 1.5vw, 3rem); }
 
 .work {
   position: relative;
