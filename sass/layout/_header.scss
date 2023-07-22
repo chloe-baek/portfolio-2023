@@ -12,6 +12,10 @@
   &__link {
     :hover {
       transform: scale(1.1) rotate(-5deg);
+
+      @include respond(tab-port) {
+        transform: none;
+      }
     }
   }
   &__logo {
@@ -61,6 +65,9 @@
       }
       &:hover {
         transform: scale(1.1) rotate(-7deg);
+        @include respond(tab-port) {
+          transform: none;
+        }
       }
     }
   }

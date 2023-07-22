@@ -7,7 +7,7 @@
 
         <?php
      $id = $_GET['id'];
-     $query = "SELECT * FROM project";
+     $query = "SELECT * FROM project ORDER BY id DESC";
      $sql = mysqli_query($connection,$query);
    
      while($row = mysqli_fetch_array($sql)){
@@ -15,7 +15,7 @@
                 <div class="work__tab">
                 <div class="work__imgContainer">
                 
-                <img src="images/img/'.$row['img_main'].'" class="work__img">
+                <img src="images/img/'.$row['img'].'" class="work__img">
                 
                 </div>
                 <div class="work__desc">
@@ -27,7 +27,7 @@
                 <div class="work__link-right">';
 
                 if(!empty($row['demo'])){
-                    print '<a href='.$row['demo'].' class="work__link" target="_blank"><i class="fafa-home"></i></a>';
+                    print '<a href='.$row['demo'].' class="work__link" target="_blank"><i class="fa fa-home"></i></a>';
                 }
                 if(!empty($row['git'])){
                     print'<a href='.$row['git'].' class="work__link" target="_blank">
