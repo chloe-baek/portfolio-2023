@@ -7,12 +7,9 @@
         <img src="./images/avartar.png" alt="chloe's avartar profile image" class="about__img-avartar ">
     </div>
 
-    <p class="home__para">As a passionate and dedicated <strong>Frontend Developer</strong>, I am ready to embark on an
-        exciting journey
-        in the world of web development. Designing visually appealing and innovative websites is one of my greatest
-        passions. My website demonstrates my attention to detail, problem-solving skills, and commitment to continuous
-        learning. A new challenge is always exciting to me, and I am always open to collaboration. <strong>Thank you for
-            visiting my portfolio.</strong></p>
+    <p class="home__para">I am ready to embark on an exciting <strong>WEB DEVELOPMENT & DESIGN</strong> journey.<br>
+        Designing visually appealing and innovative websites is one of my greatest passions. A new challenge is always
+        exciting, and I am always open to collaboration. </p>
 
 
 </section>

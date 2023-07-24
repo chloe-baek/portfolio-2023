@@ -1,40 +1,18 @@
 .design {
-  // &__container {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   max-width: 90vw;
-  //   margin: 0 auto;
-  //   justify-content: center;
-  // }
-
-  // &__ul {
-  //   display: flex;
-  //   justify-content: flex-start;
-  // }
   &__ul {
     display: grid;
-    // grid-template: auto 1fr / repeat(3, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(450px, max-content));
     max-width: 90vw;
     margin: 0 auto;
-    // @include respond(tab-port) {
-    //   grid-template: auto 1fr / repeat(2, 1fr);
-    // }
-    // @include respond(phone) {
-    //   grid-template: auto 1fr / repeat(1, 1fr);
-    // }
+    justify-content: center;
   }
   &__li {
     padding: 2rem;
     margin: 3rem auto;
     list-style: none;
-    max-width: 550px;
+    max-width: 400px;
   }
 
-  // &__figure {
-  //   width: 100%;
-  //   height: auto;
-  // }
   &__img {
     width: 100%;
     height: auto;

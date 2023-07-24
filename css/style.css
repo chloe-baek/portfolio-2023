@@ -211,13 +211,14 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, max-content));
   max-width: 90vw;
-  margin: 0 auto; }
+  margin: 0 auto;
+  justify-content: center; }
 
 .design__li {
   padding: 2rem;
   margin: 3rem auto;
   list-style: none;
-  max-width: 550px; }
+  max-width: 400px; }
 
 .design__img {
   width: 100%;

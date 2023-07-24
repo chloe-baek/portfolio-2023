@@ -1,5 +1,5 @@
-gsap.from('.design__container', {
-  duration: 3.5,
+gsap.from('.design__ul', {
+  duration: 5,
   ease: 'power4.out',
-  y: 50,
+  y: 100,
 });

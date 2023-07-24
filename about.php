@@ -10,22 +10,19 @@
         <div class="about__para">
             <p class="about__p-first ">Hello!</p>
             <p class="about__p-first">
-                &#128205; My Korean name is pronounced <span>G1 </span>(G, One) so the logo reflects that. </p>
+                My Korean name is pronounced <span>G1 </span>(G, One) so the logo reflects that. </p>
             <br>
-            <p class="about__p">Korean based in Calgary, Canada, I am continuously expanding my knowledge and exploring
-                new frameworks and libraries to enhance my skills. In this constantly evolving field, I strive to
-                provide seamless and captivating user experiences.</p>
+            <p class="about__p">I am a Korean based in &#128205;Calgary, Canada.<br>I possess a high level of
+                motivation and skill. Throughout my academic journey, I have gained a comprehensive understanding of
+                different methodologies and visual hierarchies &#128218; in the field of design and development. Seeking
+                feedback from fellow colleagues and mentors is a priority for me &#128293; as it allows me to
+                continuously refine my skills and deliver superior results in my work. Additionally, my previous
+                experience has equipped me with exceptional time management skills and attention to detail &#128300;,
+                enabling me to collaborate effectively in fast-paced and diverse environments. As a member of a team or
+                organization, I am passionate about bringing my unique blend of experience and expertise to the table.
+                &#128302;</p>
             <br>
-            <!-- <p class="about__p">I believe that a good developer creates designs and
-                functions that are easy for users to use and
-                always strives to think from the target user's perspective. I am eager to become a new developer
-                who
-                can fully immerse myself in solving small problems for users rather than focusing solely on
-                impressive achievements.</p>
-            <br>
-            <p class="about__p"> I hope that you will believe in my potential for growth and lead me in
-                the
-                right direction.</p> -->
+
         </div>
     </div>
 
