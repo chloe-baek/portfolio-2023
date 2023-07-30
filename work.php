@@ -27,10 +27,10 @@
                 <div class="work__link-right">';
 
                 if(!empty($row['demo'])){
-                    print '<a href='.$row['demo'].' class="work__link" target="_blank"><i class="fa fa-home"></i></a>';
+                    print '<a href="'.$row['demo'].'" class="work__link" target="_blank"><i class="fa fa-home"></i></a>';
                 }
                 if(!empty($row['git'])){
-                    print'<a href='.$row['git'].' class="work__link" target="_blank">
+                    print'<a href="'.$row['git'].'" class="work__link" target="_blank">
                     <i class="fa-brands fa-github"></i></a></div>
                     ';
                 }

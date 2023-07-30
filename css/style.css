@@ -126,6 +126,7 @@ a {
   .about__container {
     display: flex;
     justify-content: center;
+    align-self: center;
     width: 70vw;
     position: absolute;
     top: 50%;
@@ -158,13 +159,16 @@ a {
   .about__para {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    align-items: flex-end; }
     @media only screen and (max-width: 37.5em) {
       .about__para {
         transform: none; } }
   .about__p {
     text-align: right;
-    padding-left: 3rem;
+    max-width: 70ch;
+    padding-left: 5rem;
+    padding-top: 3rem;
     line-height: 1.6;
     font-size: clamp(1.4rem, 1.3vw, 2rem); }
     @media only screen and (max-width: 56.25em) {
@@ -218,7 +222,7 @@ a {
   padding: 2rem;
   margin: 3rem auto;
   list-style: none;
-  max-width: 400px; }
+  max-width: 500px; }
 
 .design__img {
   width: 100%;

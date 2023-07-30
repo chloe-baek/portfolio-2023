@@ -12,15 +12,17 @@
             <p class="about__p-first">
                 My Korean name is pronounced <span>G1 </span>(G, One) so the logo reflects that. </p>
             <br>
-            <p class="about__p">I am a Korean based in &#128205;Calgary, Canada.<br>I possess a high level of
+            <p class="about__p">&#128218;I possess a high level of
                 motivation and skill. Throughout my academic journey, I have gained a comprehensive understanding of
-                different methodologies and visual hierarchies &#128218; in the field of design and development. Seeking
-                feedback from fellow colleagues and mentors is a priority for me &#128293; as it allows me to
-                continuously refine my skills and deliver superior results in my work. Additionally, my previous
-                experience has equipped me with exceptional time management skills and attention to detail &#128300;,
-                enabling me to collaborate effectively in fast-paced and diverse environments. As a member of a team or
+                different methodologies and visual hierarchies in the field of design and
+                development.<br>&#128293;Seeking
+                feedback from fellow colleagues and mentors is a priority for me as it allows me to
+                continuously refine my skills and deliver superior results in my work.<br>&#128300;My previous
+                experience has equipped me with exceptional time management skills and attention to detail,
+                enabling me to collaborate effectively in fast-paced and diverse environments.<br>&#128302;As a member
+                of a team or
                 organization, I am passionate about bringing my unique blend of experience and expertise to the table.
-                &#128302;</p>
+            </p>
             <br>
 
         </div>
