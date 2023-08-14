@@ -6,28 +6,10 @@
 .color2 {
   background-color: $color-2-bg;
   color: $color-2-font;
-
-  @if ($color-2-font == #eaa45d) {
-    .header__logo,
-    .header__icon,
-    .header__icon ::before,
-    .header__icon ::after {
-      filter: invert(1);
-    }
-  }
 }
 .color3 {
   background-color: $color-3-bg;
   color: $color-3-font;
-
-  @if ($color-3-font == #a6d1c9) {
-    .header__logo,
-    .header__icon,
-    .header__icon ::before,
-    .header__icon ::after {
-      filter: invert(1);
-    }
-  }
 }
 .color4 {
   background-color: $color-4-bg;
@@ -37,12 +19,16 @@
   background-color: $color-5-bg;
   color: $color-5-font;
 
-  @if ($color-5-font == #e4e898) {
-    .header__logo,
-    .header__icon,
-    .header__icon ::before,
-    .header__icon ::after {
-      filter: invert(1);
-    }
-  }
+  // @if ($color-5-font == #e4e898) {
+  //   .header__logo,
+  //   .header__icon,
+  //   .header__icon ::before,
+  //   .header__icon ::after {
+  //     filter: invert(1);
+  //   }
+  // }
+}
+.color6 {
+  background-color: $color-6-bg;
+  color: $color-6-font;
 }

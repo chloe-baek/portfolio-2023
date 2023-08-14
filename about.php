@@ -3,12 +3,12 @@
     <h2 class="heading__h2">About</h2>
     <div class="about__container container-gsap">
 
-        <img srcset="images/profile-small.jpg 250w, images/profile.jpg 563w"
+        <!-- <img srcset="images/profile-small.jpg 250w, images/profile.jpg 563w"
             sizes="(max-width: 56.23em) 20vw, (max-width: 37.5em) 30vw, 250px" src="images/profile.jpg"
-            alt="chloe's profile image" class="about__img">
+            alt="chloe's profile image" class="about__img"> -->
 
         <div class="about__para">
-            <p class="about__p-first ">Hello!</p>
+            <!-- <p class="about__p-first ">Hello!</p> -->
             <p class="about__p-first">
                 My Korean name is pronounced <span>G1 </span>(G, One) so the logo reflects that. </p>
             <br>

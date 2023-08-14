@@ -37,6 +37,8 @@
 
     &-avartar {
       width: 20%;
+      animation: avatar 5s linear 0s infinite normal forwards running;
+      -webkit-animation: avatar 5s linear 0s infinite normal forwards running;
     }
   }
 

@@ -24,6 +24,14 @@ font-style: normal;
     .circle {
       display: none; } }
 
+@keyframes avatar {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10%); }
+  100% {
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -92,20 +100,10 @@ a {
 .color2 {
   background-color: #30354d;
   color: #eaa45d; }
-  .color2 .header__logo,
-  .color2 .header__icon,
-  .color2 .header__icon ::before,
-  .color2 .header__icon ::after {
-    filter: invert(1); }
 
 .color3 {
   background-color: #282b29;
   color: #a6d1c9; }
-  .color3 .header__logo,
-  .color3 .header__icon,
-  .color3 .header__icon ::before,
-  .color3 .header__icon ::after {
-    filter: invert(1); }
 
 .color4 {
   background-color: #f4c4c4;
@@ -114,11 +112,10 @@ a {
 .color5 {
   background-color: #875659;
   color: #e4e898; }
-  .color5 .header__logo,
-  .color5 .header__icon,
-  .color5 .header__icon ::before,
-  .color5 .header__icon ::after {
-    filter: invert(1); }
+
+.color6 {
+  background-color: #f7f3f0;
+  color: #d94423; }
 
 .about {
   height: 87vh;
@@ -155,7 +152,9 @@ a {
       .about__img {
         display: none; } }
     .about__img-avartar {
-      width: 20%; }
+      width: 20%;
+      animation: avatar 5s linear 0s infinite normal forwards running;
+      -webkit-animation: avatar 5s linear 0s infinite normal forwards running; }
   .about__para {
     display: flex;
     flex-direction: column;
@@ -216,7 +215,8 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(450px, max-content));
   max-width: 90vw;
   margin: 0 auto;
-  justify-content: center; }
+  justify-content: center;
+  width: fit-content; }
 
 .design__li {
   padding: 2rem;
@@ -290,17 +290,17 @@ a {
     .header__li {
       padding: 8px;
       margin-right: 0; } }
-  .header__li-a ::after {
+  .header__li ::after {
     content: '|';
     padding-left: 5px; }
     @media only screen and (max-width: 56.25em) {
-      .header__li-a ::after {
+      .header__li ::after {
         content: '';
         padding-left: 0; } }
-  .header__li-a:hover {
+  .header__li:hover {
     transform: scale(1.1) rotate(-7deg); }
     @media only screen and (max-width: 56.25em) {
-      .header__li-a:hover {
+      .header__li:hover {
         transform: none; } }
 
 .header__checkbox {
@@ -326,8 +326,8 @@ a {
     width: 2.5rem;
     height: 2.3px;
     border-radius: 5px;
-    background-color: #1f1f1f;
-    display: inline-block; }
+    display: inline-block;
+    background-color: #1f1f1f; }
   .header__icon::before, .header__icon::after {
     content: '';
     position: absolute;

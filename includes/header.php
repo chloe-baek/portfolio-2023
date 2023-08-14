@@ -24,18 +24,18 @@
                 <img src="images/logo.png" alt="Chloe's logo" class="header__logo">
             </a>
             <ul class="header__ul">
-                <a href="about" class="header__li-a">
-                    <li class="header__li">About</li>
-                </a>
-                <a href="work" class="header__li-a">
-                    <li class="header__li">Development</li>
-                </a>
-                <a href="design" class="header__li-a">
-                    <li class="header__li">Design</li>
-                </a>
-                <a href="contact" class="header__li-a">
-                    <li class="header__li">Contact</li>
-                </a>
+                <li class="header__li">
+                    <a href="about">About</a>
+                </li>
+                <li class="header__li">
+                    <a href="work">Development</a>
+                </li>
+                <li class="header__li">
+                    <a href="design">Design</a>
+                </li>
+                <li class="header__li">
+                    <a href="contact">Contact</a>
+                </li>
 
             </ul>
 
