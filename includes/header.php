@@ -21,7 +21,7 @@
     <header class="header">
         <nav class="header__nav">
             <a href="index" class="header__link">
-                <img src="images/logo.png" alt="Chloe's logo" class="header__logo">
+                <img src="" alt="Chloe G1 logo" class="header__logo">
             </a>
             <ul class="header__ul">
                 <li class="header__li">

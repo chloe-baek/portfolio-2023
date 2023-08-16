@@ -1,34 +1,68 @@
 .color1 {
   background-color: $color-1-bg;
   color: $color-1-font;
+  @if ($color-1-font == #1f1f1f) {
+    .header__icon,
+    .header__icon::before,
+    .header__icon::after {
+      background-color: #1f1f1f;
+    }
+  }
 }
 
 .color2 {
   background-color: $color-2-bg;
   color: $color-2-font;
+  @if ($color-2-font == #eaa45d) {
+    .header__icon,
+    .header__icon::before,
+    .header__icon::after {
+      background-color: #eaa45d;
+    }
+  }
 }
 .color3 {
   background-color: $color-3-bg;
   color: $color-3-font;
+  @if ($color-3-font == #a6d1c9) {
+    .header__icon,
+    .header__icon::before,
+    .header__icon::after {
+      background-color: #a6d1c9;
+    }
+  }
 }
 .color4 {
   background-color: $color-4-bg;
   color: $color-4-font;
+  @if ($color-4-font == #282b29) {
+    .header__icon,
+    .header__icon::before,
+    .header__icon::after {
+      background-color: #282b29;
+    }
+  }
 }
 .color5 {
   background-color: $color-5-bg;
   color: $color-5-font;
 
-  // @if ($color-5-font == #e4e898) {
-  //   .header__logo,
-  //   .header__icon,
-  //   .header__icon ::before,
-  //   .header__icon ::after {
-  //     filter: invert(1);
-  //   }
-  // }
+  @if ($color-5-font == #e4e898) {
+    .header__icon,
+    .header__icon::before,
+    .header__icon::after {
+      background-color: #e4e898;
+    }
+  }
 }
 .color6 {
   background-color: $color-6-bg;
   color: $color-6-font;
+  @if ($color-6-font == #d94423) {
+    .header__icon,
+    .header__icon::before,
+    .header__icon::after {
+      background-color: #d94423;
+    }
+  }
 }

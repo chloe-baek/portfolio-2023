@@ -42,7 +42,7 @@
 </a>
 <?php include('includes/footer.php') ?>
 <script src="script/design.js" defer></script>
-
+<script src="script/scroll.js" defer></script>
 </body>
 
 </html>

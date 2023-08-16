@@ -17,7 +17,7 @@
 </main>
 
 <?php include('includes/footer.php') ?>
-<script src="script/container.js"></script>
+<script src="script/container.js" defer></script>
 
 </body>
 

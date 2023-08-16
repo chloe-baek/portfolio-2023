@@ -1,6 +1,6 @@
 gsap.from('.container-gsap', {
-  duration: 2.5,
+  duration: 1.8,
   ease: 'sine.out',
-  y: 100,
+  y: 13,
   opacity: 0,
 });

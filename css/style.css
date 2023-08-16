@@ -16,9 +16,9 @@ font-style: normal;
   height: 30px;
   border-radius: 50%;
   z-index: -19;
-  border-left: 1.1px solid;
-  border-top: 1.1px solid;
-  border-right: 1.1px solid;
+  border-left: 1.5px solid;
+  border-top: 1.5px solid;
+  border-right: 1.5px solid;
   transform: translate(-50%, -50%); }
   @media only screen and (max-width: 56.25em) {
     .circle {
@@ -96,26 +96,50 @@ a {
 .color1 {
   background-color: #f7f3f0;
   color: #1f1f1f; }
+  .color1 .header__icon,
+  .color1 .header__icon::before,
+  .color1 .header__icon::after {
+    background-color: #1f1f1f; }
 
 .color2 {
   background-color: #30354d;
   color: #eaa45d; }
+  .color2 .header__icon,
+  .color2 .header__icon::before,
+  .color2 .header__icon::after {
+    background-color: #eaa45d; }
 
 .color3 {
   background-color: #282b29;
   color: #a6d1c9; }
+  .color3 .header__icon,
+  .color3 .header__icon::before,
+  .color3 .header__icon::after {
+    background-color: #a6d1c9; }
 
 .color4 {
   background-color: #f4c4c4;
   color: #282b29; }
+  .color4 .header__icon,
+  .color4 .header__icon::before,
+  .color4 .header__icon::after {
+    background-color: #282b29; }
 
 .color5 {
   background-color: #875659;
   color: #e4e898; }
+  .color5 .header__icon,
+  .color5 .header__icon::before,
+  .color5 .header__icon::after {
+    background-color: #e4e898; }
 
 .color6 {
   background-color: #f7f3f0;
   color: #d94423; }
+  .color6 .header__icon,
+  .color6 .header__icon::before,
+  .color6 .header__icon::after {
+    background-color: #d94423; }
 
 .about {
   height: 87vh;
@@ -134,39 +158,19 @@ a {
       .about__container {
         display: block;
         width: 90vw; } }
-  .about__img {
-    width: 100%;
-    height: 100%;
-    max-width: 360px;
-    max-height: 360px;
-    border-radius: 50%;
-    box-shadow: -7px 8px 22px -2px rgba(0, 0, 0, 0.64);
-    -webkit-box-shadow: -7px 8px 22px -2px rgba(0, 0, 0, 0.64);
-    -moz-box-shadow: -7px 8px 22px -2px rgba(0, 0, 0, 0.64); }
-    @media only screen and (max-width: 56.25em) {
-      .about__img {
-        width: 40%;
-        height: 40%;
-        margin-left: 5rem; } }
-    @media only screen and (max-width: 37.5em) {
-      .about__img {
-        display: none; } }
-    .about__img-avartar {
-      width: 20%;
-      animation: avatar 5s linear 0s infinite normal forwards running;
-      -webkit-animation: avatar 5s linear 0s infinite normal forwards running; }
+  .about__img-avartar {
+    width: 20%;
+    animation: avatar 5s linear 0s infinite normal forwards running;
+    -webkit-animation: avatar 5s linear 0s infinite normal forwards running; }
   .about__para {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-end; }
+    align-items: flex-start; }
     @media only screen and (max-width: 37.5em) {
       .about__para {
         transform: none; } }
   .about__p {
-    text-align: right;
-    max-width: 70ch;
-    padding-left: 5rem;
     padding-top: 3rem;
     line-height: 1.6;
     font-size: clamp(1.4rem, 1.3vw, 2rem); }
@@ -177,7 +181,6 @@ a {
       font-family: 'Cormorant', serif;
       font-size: clamp(2rem, 1.5vw, 3rem);
       font-weight: 600;
-      text-align: right;
       line-height: 1.6; }
       .about__p-first:nth-child(1) {
         font-size: clamp(2.5rem, 2vw, 4rem); }
@@ -186,6 +189,19 @@ a {
         font-weight: 900;
         font-style: normal;
         font-size: clamp(1.5rem, 2vw, 3.5rem); }
+  .about__p > span {
+    display: inline-block;
+    margin-right: 1rem;
+    animation: avatar 3s linear 0s infinite normal forwards running;
+    -webkit-animation: avatar 3s linear 0s infinite normal forwards running; }
+  .about__h5 {
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-weight: 600;
+    padding-top: 4rem;
+    padding-bottom: 1rem; }
+  .about__web > img,
+  .about__design > img {
+    padding: 0.5rem; }
 
 .contact {
   height: 87vh;
@@ -222,6 +238,7 @@ a {
   padding: 2rem;
   margin: 3rem auto;
   list-style: none;
+  width: 90%;
   max-width: 500px; }
 
 .design__img {
@@ -326,8 +343,7 @@ a {
     width: 2.5rem;
     height: 2.3px;
     border-radius: 5px;
-    display: inline-block;
-    background-color: #1f1f1f; }
+    display: inline-block; }
   .header__icon::before, .header__icon::after {
     content: '';
     position: absolute;
