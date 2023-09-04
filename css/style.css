@@ -145,6 +145,7 @@ a {
   height: 87vh;
   position: relative; }
   .about__container {
+    position: relative;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -171,8 +172,7 @@ a {
       .about__para {
         transform: none; } }
   .about__p {
-    padding-top: 3rem;
-    line-height: 1.6;
+    line-height: 1.7;
     font-size: clamp(1.4rem, 1.3vw, 2rem); }
     @media only screen and (max-width: 56.25em) {
       .about__p {
@@ -389,13 +389,12 @@ a {
   .home__heading {
     font-size: clamp(4rem, 9vw, 13rem); }
   .home__para {
-    font-size: clamp(1.2rem, 1.3vw, 3rem);
+    font-size: clamp(1.2rem, 1.5vw, 3rem);
     line-height: 1.7;
     padding: 1.3rem;
     text-align: center;
     width: 60%; }
     .home__para:last-child {
-      font-size: clamp(1.3rem, 1.5vw, 3rem);
       font-family: 'Cormorant', serif;
       border-top: 1px solid; }
   .home__para > strong {

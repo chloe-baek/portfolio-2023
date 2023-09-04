@@ -7,7 +7,7 @@ const randomColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 
 window.onload = function () {
   body.classList.add(`color${randomColor}`);
-  logopng.src = `images/logo${randomColor}.png`;
+  logopng.src = `images/logo${randomColor}-min.png`;
 };
 
 window.addEventListener('mousemove', (e) => {

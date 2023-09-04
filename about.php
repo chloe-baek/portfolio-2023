@@ -1,7 +1,7 @@
 <?php include('includes/header.php') ?>
 <section class="about">
     <h2 class="heading__h2">About</h2>
-    <div class="about__container container-gsap">
+    <section class="about__container container-gsap">
 
         <!-- <img srcset="images/profile-small.jpg 250w, images/profile.jpg 563w"
             sizes="(max-width: 56.23em) 20vw, (max-width: 37.5em) 30vw, 250px" src="images/profile.jpg"
@@ -11,15 +11,13 @@
             <p class="about__p-first">
                 My Korean name is pronounced <span>G1 </span>(G, One) so the logo reflects that. </p>
             <br>
-            <p class="about__p"><span>&#128218;</span>I possess a high level of
-                motivation and skill. Throughout my academic journey, I have gained a comprehensive understanding of
-                different methodologies and visual hierarchies in the field of design and
-                development.<br><span>&#128293;</span>Seeking
-                feedback from fellow colleagues and mentors is a priority for me as it allows me to
-                continuously refine my skills and deliver superior results in my work.<br><span>&#128300;</span>My
-                previous
-                experience has equipped me with exceptional time management skills and attention to detail,
-                enabling me to collaborate effectively in fast-paced and diverse environments.
+            <p class="about__p"><span>&#127472;&#127479;</span>Korean based in Calgary, Canada. <span>
+                    &#127464;&#127462;</span></p>
+            <p class="about__p"><span>&#128218;</span>Through my academic journey at SAIT's New Media Production and
+                Design Program, I developed a solid foundation in web development.</p>
+            <p class="about__p"><span>&#128161;</span>As a well-organized time manager and a detail-oriented
+                individual,
+                I am able to work effectively in fast-paced and diverse environments.
             </p>
             <h5 class="about__h5">Tools and Skills</h5>
             <div class="about__skills">
@@ -51,12 +49,13 @@
                         alt="adobe-xd--v1" />
                     <img width="48" height="48" src="https://img.icons8.com/color/48/adobe-premiere-pro--v1.png"
                         alt="adobe-premiere-pro--v1" />
+                    <img width="48" height="48" src="https://img.icons8.com/fluency/48/canva.png" alt="canva" />
                 </div>
             </div>
             <br>
 
         </div>
-    </div>
+    </section>
 
 </section>
 

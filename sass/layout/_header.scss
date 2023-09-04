@@ -162,13 +162,13 @@
   }
 
   &__para {
-    font-size: clamp(1.2rem, $font-size-df, 3rem);
+    font-size: clamp(1.2rem, $font-size-lg, 3rem);
     line-height: 1.7;
     padding: 1.3rem;
     text-align: center;
     width: 60%;
     &:last-child {
-      font-size: clamp(1.3rem, $font-size-lg, 3rem);
+      // font-size: clamp(1.3rem, $font-size-lg, 3rem);
       font-family: 'Cormorant', serif;
       border-top: 1px solid;
     }
