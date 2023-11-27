@@ -3,8 +3,10 @@
 
 ## 📌 Features
 + Each time the page loads, five color themes are randomly generated and displayed
-+ 
++ Applied a typewriter effect to the heading using the JavaScript library TypeIt
++ Added a smooth scrolling animation to the 'development' page using the ScrollOut library
 ## 📹 Preview
+[![Video Label](https://img.youtube.com/vi/UbzAPIKQvJ0/0.jpg)](https://www.youtube.com/watch?v=UbzAPIKQvJ0)
 ## 💡 Challenges
 ## 💻 Technologies
 ![html](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
