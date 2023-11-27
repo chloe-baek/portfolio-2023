@@ -2,6 +2,8 @@
 
 
 ## 📌 Features
++ Each time the page loads, five color themes are randomly generated and displayed
++ 
 ## 📹 Preview
 ## 💡 Challenges
 ## 💻 Technologies
