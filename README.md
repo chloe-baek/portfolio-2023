@@ -1,7 +1,7 @@
 # Portfolio website(2022-2023)
 
 
-## 📍Features
+## 📌Features
 ## 📹Preview
 ## 💡Challenges
 ## 💻Technologies
