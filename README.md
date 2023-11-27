@@ -8,6 +8,7 @@
 ### 📹 Preview
 [![Video Label](https://img.youtube.com/vi/UbzAPIKQvJ0/0.jpg)](https://www.youtube.com/watch?v=UbzAPIKQvJ0)
 ### 💡 Challenges
+By combining the knowledge acquired during a two-year new media production and design program with my personal studies, I aim to showcase my unique style and strengths to the fullest extent through design and development.
 ### 💻 Technologies
 ![html](https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![css](https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white)
