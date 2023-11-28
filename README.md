@@ -18,4 +18,4 @@ By combining the knowledge acquired during a two-year new media production and d
 ![mysql](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 
 ### 🔗 Author
-*[Chloe](https://www.linkedin.com/in/jewon-chloe-baek/)*
+*Chloe Jewon Baek*
